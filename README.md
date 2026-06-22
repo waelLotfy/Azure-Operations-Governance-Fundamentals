@@ -4,7 +4,7 @@ Hands-on exploration of Azure operational governance, compliance, cost managemen
 ## Overview
 This repository documents hands-on labs focused on Azure operational governance and management completed as part of the AZ-900T00-A Introduction to Microsoft Azure course.
 
-The labs explore how organizations manage compliance, cost, availability, and support in Azure environments. It also demonstrates how to apply governance, organization, and protection mechanisms across Azure resources using **tags** and **resource locks**.
+The labs explore how organizations manage compliance, cost, availability, and support in Azure environments. The labs also demonstrate how to apply governance, organization, and protection mechanisms across Azure resources using **tags** and **resource locks**.
 
 ---
 
