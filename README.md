@@ -4,7 +4,7 @@ Hands-on exploration of Azure operational governance, compliance, cost managemen
 ## Overview
 This repository documents hands-on labs focused on Azure operational governance and management completed as part of the AZ-900T00-A Introduction to Microsoft Azure course.
 
-The labs explore how organizations manage compliance, cost, availability, and support in Azure environments.
+The labs explore how organizations manage compliance, cost, availability, and support in Azure environments. It also demonstrates how to apply governance, organization, and protection mechanisms across Azure resources using **tags** and **resource locks**.
 
 ---
 
@@ -31,6 +31,89 @@ The labs explore how organizations manage compliance, cost, availability, and su
 - Practiced creating and monitoring billing and support requests
 - Gained operational awareness of Azure support processes
 
+### Create Resources and Apply Tags
+
+#### Objectives
+- Create a resource group and multiple storage accounts  
+- Apply consistent organizational tags  
+- Use tag-based filtering to locate and organize resources  
+
+#### Tasks Performed
+
+##### 1. Prepare the Environment
+- Created a dedicated resource group for governance testing.
+- Ensured subscription and region alignment.
+
+##### 2. Create a Test Storage Account
+- Deployed the first storage account inside the resource group.
+
+##### 3. Tag the Resource Group
+Applied tags such as:
+- `Environment: Test`
+- `Department: IT`
+- `Owner: Admin`
+
+##### 4. Tag the Storage Account
+- Added matching tags to ensure consistency and support cost allocation.
+
+##### 5. Create a Second Storage Account with Different Tags
+- Deployed a second storage account with alternate tags (e.g., `Environment: Dev`).
+
+##### 6. Filter Resources by Tag
+- Used Azure Portal filtering to quickly locate resources based on tag values.
+- Demonstrated how tags improve visibility in large environments.
+
+**Outcome:**  
+A resource group and two storage accounts with consistent and meaningful organizational tags applied.
+
+---
+
+### Apply Resource Locks
+
+#### Objectives
+- Protect critical resources from accidental modification or deletion  
+- Understand the difference between **Delete** and **Read‑only** locks  
+
+#### Tasks Performed
+
+##### 1. Apply a Delete Lock to the Storage Account
+- Added a **Delete** lock to prevent accidental removal of the storage account.
+
+##### 2. Apply a Read‑Only Lock to the Resource Group
+- Applied a **Read‑only** lock at the resource group level.
+- Ensured all resources inside the group inherit the lock restrictions.
+
+**Outcome:**  
+A storage account protected by a delete lock and a resource group protected by a read‑only lock.
+
+---
+
+### Test Lock Enforcement
+
+#### Objectives
+- Validate how Azure enforces locks  
+- Confirm that locks override user permissions  
+- Restore normal operations by removing locks  
+
+#### Tasks Performed
+
+##### 1. Test the Read‑Only Lock
+- Attempted to modify resources inside the locked resource group.
+- Azure correctly blocked all write operations.
+
+##### 2. Test the Delete Lock
+- Attempted to delete the locked storage account.
+- Azure prevented the deletion and displayed lock enforcement messages.
+
+##### 3. Remove the Locks
+- Removed both locks to restore normal functionality.
+
+##### 4. Confirm Normal Operations Are Restored
+- Successfully modified and deleted resources after lock removal.
+
+**Outcome:**  
+Confirmed that Azure locks prevent changes as expected and that removing locks restores full administrative access.
+
 ---
 
 ## Key Learnings
@@ -48,6 +131,9 @@ The labs explore how organizations manage compliance, cost, availability, and su
 - SLA & Availability Planning
 - Azure Support & Operations
 - Cloud Financial Management
+- Resource Tagging Strategy  
+- Resource Locks (Delete / Read‑only)  
+- Operational Safety & Change Control 
 
 ---
 
