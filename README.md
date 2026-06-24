@@ -31,6 +31,33 @@ The labs explore how organizations manage compliance, cost, availability, and su
 - Practiced creating and monitoring billing and support requests
 - Gained operational awareness of Azure support processes
 
+#### Alerts & Operational Notifications
+
+##### Objectives
+- Configure action groups for alert notifications  
+- Create Service Health alerts for platform incidents  
+- Create Activity Log alerts for operational visibility  
+
+##### Tasks Performed
+
+###### 1. Create an Action Group
+- Configured an action group with email notifications and validated delivery through a test alert.
+
+**Outcome:**  
+An action group configured to send email notifications when alerts fire.
+
+###### 2. Create a Service Health Alert
+- Created a Service Health alert to monitor Azure platform incidents and planned maintenance in selected regions.
+
+**Outcome:**  
+A Service Health alert that notifies the operations team about Azure platform issues and maintenance events.
+
+###### 3. Create an Activity Log Alert
+- Configured an Activity Log alert that triggers when any resource is deleted in the monitored resource group.
+
+**Outcome:**  
+An Activity Log alert that provides real‑time visibility into resource deletions within the environment.  
+
 ### Create Resources and Apply Tags
 
 #### Objectives
