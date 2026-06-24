@@ -116,6 +116,39 @@ Confirmed that Azure locks prevent changes as expected and that removing locks r
 
 ---
 
+### Cost Governance: Tags, Budgets & Azure Policy
+
+#### Objectives
+- Apply cost‑tracking tags to pilot resources  
+- Configure budgets and alert thresholds  
+- Assign and validate Azure Policy for governance enforcement  
+
+#### Tasks Performed
+
+##### 1. Apply Cost‑Tracking Tags
+- Created a resource group and storage account for cost governance testing.
+- Applied organizational tags to both resources to support cost reporting and filtering.
+
+**Outcome:**  
+Tagged pilot resources ready for cost reporting and filtering.
+
+##### 2. Create Budget and Alerts
+- Configured a budget with alert thresholds to provide early warnings before spending exceeds targets.
+- Enabled actionable notifications to support proactive cost management.
+
+**Outcome:**  
+Budget thresholds configured with automated alerts for cost monitoring.
+
+##### 3. Assign and Test Azure Policy
+- Assigned a policy restricting resource creation to a specific region.
+- Validated that non‑compliant deployments were blocked.
+- Reviewed the compliance dashboard to confirm enforcement.
+
+**Outcome:**  
+A policy control assigned and validated through a compliance test, demonstrating preventative governance.
+
+---
+
 ## Key Learnings
 - Azure provides built-in tools for compliance, trust, and risk management.
 - Cost estimation and comparison are essential before cloud deployment.
